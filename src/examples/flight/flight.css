@@ -1,0 +1,12 @@
+button[disabled] {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+button[data-state='submitted'] {
+	background-color: palegreen;
+}
+
+label[data-state='error'] > input {
+	border: 2px solid tomato;
+}
