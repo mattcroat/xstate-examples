@@ -1,7 +1,5 @@
 import { assign, createMachine, interpret } from 'xstate'
-import '../../xstate/inspector'
-
-import './flight.css'
+import '../xstate/inspector'
 
 type FlightContext = {
 	startDate?: string

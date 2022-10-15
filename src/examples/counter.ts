@@ -36,7 +36,7 @@ const counter = interpret(counterMachine, { devTools: true }).start()
 
 const btn = 'bg-neutral-800 p-2 px-4 rounded-xl'
 
-const counterHtml = `
+const html = `
 		<div class="flex gap-2">
 			<button class="inc ${btn}">+</button>
 			<span class="count ${btn}">0</span/>
@@ -44,7 +44,7 @@ const counterHtml = `
 		</div>
 	`
 
-document.body.insertAdjacentHTML('afterbegin', counterHtml)
+document.body.insertAdjacentHTML('afterbegin', html)
 
 const incEl = document.querySelector<HTMLDivElement>('.inc')
 const decEl = document.querySelector<HTMLDivElement>('.dec')
